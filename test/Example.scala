@@ -6,7 +6,7 @@ class Example extends Simulation {
 
   val httpProtocol = http.baseUrl("http://computer-database.gatling.io")
 
-    val scn = scenario("Example") // A scenario is a chain of requests and pauses
+    val scn = scenario("Example")
       .exec(
         http("request_1")
           .get("/")
