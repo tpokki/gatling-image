@@ -11,6 +11,7 @@ class Example extends Simulation {
         http("request_1")
           .get("/")
       )
+      .pause(60)
 
     setUp(scn.inject(atOnceUsers(1)).protocols(httpProtocol))
 }
